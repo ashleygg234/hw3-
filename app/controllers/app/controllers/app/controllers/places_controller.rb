@@ -19,3 +19,8 @@ class PlacesController < ApplicationController
     redirect_to "/places"
   end
 end
+class PlacesController < ApplicationController
+  def index
+    @places = Place.all
+  end
+end
